@@ -1,0 +1,150 @@
+/*
+ Using html { font-size: 62.5%; } to make rem math easier and more predictable.
+  This sets the base font size to 10px, so 1rem = 10px, 1.6rem = 16px, etc.
+  No awkward 1.875rem = 30px conversions.
+*/
+
+/* Base font sizing and rhythm */
+/*Custom Font Import*/
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-SemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;        /* 16px */
+  line-height: 1.5;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #111;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+h1 { font-size: 3.2rem; }   /* 32px */
+h2 { font-size: 2.4rem; }   /* 24px */
+h3 { font-size: 2rem; }     /* 20px */
+h4 { font-size: 1.8rem; }   /* 18px */
+h5 { font-size: 1.6rem; }   /* 16px */
+h6 { font-size: 1.4rem; }   /* 14px */
+
+/* Paragraphs and general text */
+p {
+  font-size: 1.6rem;
+  max-width: 65ch;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Lists */
+ul, ol {
+  padding: 0;
+}
+
+
+/* Blockquotes */
+blockquote {
+  font-style: italic;
+  margin: 1.6rem 0;
+  padding-left: 1.6rem;
+  border-left: 4px solid #ccc;
+}
+/* Buttons */
+button {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
