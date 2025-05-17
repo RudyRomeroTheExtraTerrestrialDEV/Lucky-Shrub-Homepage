@@ -3,12 +3,15 @@
 }
 
 :root {
-  --color-primary: #386641;
+  --color-border:#000;
+  --color-primary: #47784f;
   --color-on-primary: #FFFFFF;
   --color-base: #CB997E;
+  --color-bark: #543427;
   --color-text: #1B1B1B;
   --color-muted: #A5A58D;
   --color-bg: #FFF1E6;
+  --color-accent-dark-bg: #161e11;
   /*header hamburger menu button settings*/
     --burger-width: 40px;
   --burger-height: 30px;
@@ -33,12 +36,10 @@ button {
   display: grid;
   grid-template-columns: 1fr;
 /*grid-template-rows = auto if not defined*/
-grid-template-rows: auto 1fr 50px;
   grid-template-areas:
   "header" 
   "main" 
   "footer";
-  min-height: 100vh;
 }
 /*header and sibling settings*/
 header{
@@ -47,6 +48,7 @@ header{
   flex-direction: column;
   border-bottom: 1px solid ;
   overflow: hidden;
+  background-color: var(--color-accent-dark-bg);
 }
 /*container for logo and humburger button*/
 .header-logo-and-menu-button{
@@ -123,14 +125,18 @@ header ul {
 header.nav-active ul {
   max-height: 500px;
 }
-
+nav{
+  border-top: 1px solid var(--color-border);
+}
 nav a {
   display: inline-block; /* or block */
   padding: 1rem 2rem;
   width:100vw; /* or fixed value */
   height: auto; /* or fixed value */
-  border-top: 1px solid var(--color-primary);
-  color: var(--color-primary);
+  color: var(--color-on-primary);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.0rem;
 }
 nav a:hover {
   background-color: var(--color-primary);
@@ -140,15 +146,69 @@ nav a:focus {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
+/*Hero section and siblings*/
+#hero{
+  display: grid;
+  place-items: center;
+background-image:
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('images/Biophilic Landscaping Design.png');
+     background-size: cover;
+     background-position: center;
+  height:91vh;
+  color: var(--color-on-primary);
+}
+#hero div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:50px;
+   letter-spacing: 2px;
+   text-align: center;
+   max-width:500px;
+}
+#hero h1{
+ letter-spacing: 3px;
+ font-weight: 100;
+}
+#hero button{
+  color: var(--color-on-primary);
+}
+#hero button:hover{
+  background-color: var(--color-primary);
+}
 /*main and sibling settings*/
 
 main{
   grid-area: main;
 }
+.plant-nursery{
+  min-height: 200px;
+  display: grid;
+  background-color: var(--color-accent-dark-bg);
+background: url('images/natural-paper.png') repeat;
+background-size: 100px;
+padding: 50px 20px;;
+}
+.plant-nursery-service-cards{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.plant-nursery article{
+  background-color: var(--color-accent-dark-bg);
+ height: 280px;
+}
 /*footer and sibling settings*/
 footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--color-bark);
+  color: var(--color-on-primary);
   grid-area: footer;
 }
 footer>div:nth-child(1) img{
-  height: 20px;
+  height: 50px;
 }
