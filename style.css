@@ -41,6 +41,9 @@ button {
   "main" 
   "footer";
 }
+h3,a{
+  color: var(--color-on-primary);
+}
 /*header and sibling settings*/
 header{
   grid-area: header;
@@ -55,7 +58,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 40px;
 }
 /*Logo*/
 header img{
@@ -152,7 +155,7 @@ nav a:focus {
   place-items: center;
 background-image:
   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url('images/Biophilic Landscaping Design.png');
+  url('images/Biophilic-Landscaping-Design-1.png');
      background-size: cover;
      background-position: center;
   height:91vh;
@@ -170,6 +173,12 @@ background-image:
 #hero h1{
  letter-spacing: 3px;
  font-weight: 100;
+ font-size: clamp(4.2rem, 5vw, 8rem);
+}
+#hero p{
+
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+
 }
 #hero button{
   color: var(--color-on-primary);
@@ -188,7 +197,16 @@ main{
   background-color: var(--color-accent-dark-bg);
 background: url('images/natural-paper.png') repeat;
 background-size: 100px;
-padding: 50px 20px;;
+padding: 50px 20px;
+}
+.plant-nursery p{
+text-align: center;
+}
+.plant-nursery h2{
+  color: var(--color-accent-dark-bg);
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 50px;
 }
 .plant-nursery-service-cards{
   display: grid;
@@ -198,6 +216,34 @@ padding: 50px 20px;;
 .plant-nursery article{
   background-color: var(--color-accent-dark-bg);
  height: 280px;
+}
+.plant-nursery article p{
+  border-bottom: 1px solid var(--color-on-primary);
+}
+.service-card-1,.service-card-2,.service-card-3{
+display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: space-evenly;
+padding-top:50px ;
+}
+.service-card-1{
+  background-image:
+  linear-gradient(rgba(40, 51, 26, 0.68),rgba(40, 51, 26, 0.68)),
+  url('images/outdoor-design.png');
+  background-size:cover;
+}
+.service-card-2{
+  background-image:
+  linear-gradient(rgba(104, 91, 62, 0.6),rgba(104, 91, 62, 0.6)),
+  url('images/estate-styling.png');
+  background-size:cover;
+}
+.service-card-3{
+  background-image:
+  linear-gradient(rgba(71, 89, 67, 0.6),rgba(71, 89, 67, 0.6)),
+  url('images/plant-studio.png');
+  background-size:cover;
 }
 /*footer and sibling settings*/
 footer{
