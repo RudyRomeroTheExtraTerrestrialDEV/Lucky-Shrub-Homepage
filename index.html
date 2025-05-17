@@ -1,54 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Lucky Shrub is a Tucson-based garden design and landscaping firm with a nursery of indoor and outdoor plants.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lucky Shrub is a Tucson-based garden design and landscaping firm with a nursery of indoor and outdoor plants."
+    />
     <title>Lucky Shrub | Garden Design & Nursery in Tucson, AZ</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="fonts/typography.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="fonts/typography.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="page-grid">
-        <header>
-            <div class="header-logo-and-menu-button">
-            <img class="logo" src="images/Asset 2@3x.png" alt="Lucky Shrub home">
-<div id="hamburger-button">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-            </div>
-            
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1>Transform Any Space Into an Oasis</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-            <button>Click me</button>
-            <section id="plant nusery"></section>
-        </main>
-        <footer>
-            <div>
-                <img class="logo" src="images/Asset 2@3x.png" alt="Lucky Shrub logo">
-            </div>
-            <div>
-                <p>&copy; 2025 Lucky Shrub</p>
-            </div>
-        </footer>
+      <header>
+        <div class="header-logo-and-menu-button">
+          <img
+            class="logo"
+            src="images/Asset 2@3x.png"
+            alt="Lucky Shrub home"
+          />
+          <div
+            id="hamburger-button"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <nav role="navigation" aria-label="Main navigation">
+          <ul id="main-navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- Hero Section: Main introduction with headline and CTA -->
+        <section id="hero" aria-label="Intro section">
+          <div>
+            <h1>Living Oasis</h1>
+            <p>
+              Live among plants Breathe easy. Embrace natural peace paradise.
+            </p>
+            <button>get an estimate</button>
+          </div>
+        </section>
+        <section class="plant-nursery">
+            <h2>Plant Nursery</h2>    
+            <section class="plant-nursery-service-cards">
+          <a
+            href="/services/landscaping"
+            aria-label="Learn more about Landscaping Services"
+          >
+            <article class="service-card">...</article>
+          </a>
+          <a
+            href="/services/landscaping"
+            aria-label="Learn more about Landscaping Services"
+          >
+            <article class="service-card">...</article>
+          </a>
+          <a
+            href="/services/landscaping"
+            aria-label="Learn more about Landscaping Services"
+          >
+            <article class="service-card">...</article>
+          </a>
+          </section>
+        </section>
+      </main>
+      <footer>
+        <div>
+          <img
+            class="logo"
+            src="images/Asset 3@3x.png"
+            alt="Lucky Shrub logo"
+          />
+        </div>
+        <div>
+          <p>&copy; 2025 Lucky Shrub</p>
+        </div>
+      </footer>
     </div>
     <script src="fun.js"></script>
-</body>
-
+  </body>
 </html>
