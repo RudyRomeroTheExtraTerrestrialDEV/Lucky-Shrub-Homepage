@@ -100,7 +100,6 @@ body {
   font-size: 1.6rem;        /* 16px */
   line-height: 1.5;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #111;
 }
 
 /* Headings */
@@ -119,7 +118,7 @@ h6 { font-size: 1.4rem; }   /* 14px */
 /* Paragraphs and general text */
 p {
   font-size: 1.6rem;
-  max-width: 65ch;
+  margin-bottom:10px ;
 }
 
 small {
@@ -129,6 +128,7 @@ small {
 /* Links */
 a {
   text-decoration: none;
+  color: unset;
 }
 
 /* Lists */
